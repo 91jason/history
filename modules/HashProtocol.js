@@ -31,8 +31,8 @@ const replaceHashPath = (path) => {
   )
 }
 
-export { getUserConfirmation, go } from './BrowserProtocol'
-
+import { getUserConfirmation, go } from './BrowserProtocol'
+export {getUserConfirmation, go};
 export const getCurrentLocation = (pathCoder, queryKey) => {
   let path = pathCoder.decodePath(getHashPath())
   const key = getQueryStringValueFromPath(path, queryKey)

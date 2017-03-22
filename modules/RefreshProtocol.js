@@ -1,8 +1,8 @@
 import { createLocation } from './LocationUtils'
 import { createPath } from './PathUtils'
 
-export { getUserConfirmation, go } from './BrowserProtocol'
-
+import { getUserConfirmation, go } from './BrowserProtocol'
+export {getUserConfirmation, go}
 export const getCurrentLocation = () =>
   createLocation(window.location)
 

@@ -1,11 +1,22 @@
-export createHistory from './createBrowserHistory'
-export createHashHistory from './createHashHistory'
-export createMemoryHistory from './createMemoryHistory'
+import createHistory from './createBrowserHistory'
+import createHashHistory from './createHashHistory'
+import createMemoryHistory from './createMemoryHistory'
 
-export useBasename from './useBasename'
-export useBeforeUnload from './useBeforeUnload'
-export useQueries from './useQueries'
+import useBasename from './useBasename'
+import useBeforeUnload from './useBeforeUnload'
+import useQueries from './useQueries'
 
-export * as Actions from './Actions'
+import * as Actions from './Actions'
 
-export { locationsAreEqual } from './LocationUtils'
+import { locationsAreEqual } from './LocationUtils'
+
+export {
+	createHistory,
+	createHashHistory,
+	createMemoryHistory,
+	useBasename,
+	useBeforeUnload,
+	useQueries,
+	Actions,
+	locationsAreEqual
+}
